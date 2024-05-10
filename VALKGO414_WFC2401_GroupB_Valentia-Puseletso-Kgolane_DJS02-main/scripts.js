@@ -12,7 +12,8 @@ form.addEventListener("submit", (event) => {
 
   // Check if inputs are valid numbers
   if (isNaN(dividendNumber) || isNaN(dividerNumber)) {
-    result.innerHTML = "Division not performed. Invalid number provided. Try again";
+    result.innerHTML = "Something critical went wrong. please reload the page.";
+    console.error("Critical error: Non-numeric inputs provided.);
     return;
   }
 
