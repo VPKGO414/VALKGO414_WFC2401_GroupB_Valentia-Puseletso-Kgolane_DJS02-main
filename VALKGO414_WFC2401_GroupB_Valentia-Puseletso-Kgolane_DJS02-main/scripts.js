@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
   const dividerNumber = parseFloat(divider);
 
   // Check if inputs are valid numbers
-  if (isNaN(dividendNumber) || isNan(dividerNumber)) {
+  if (isNaN(dividendNumber) || isNaN(dividerNumber)) {
     result.innerHTML = "Division not performed. Invalid number provided. Try again";
     return;
   }
@@ -29,13 +29,14 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  //perform division
+  // Perform division
   const divisionResult = dividendNumber / dividerNumber;
 
-  // Check if the result is a whole nuumber
+  // Check if the result is a whole number
   if (divisionResult % 1 === 0) {
     result.innerText = divisionResult;
-  } else{
+  } else {
     result.innerText = Math.trunc(divisionResult); // Display whole number without decimal places
   }
 });
+
